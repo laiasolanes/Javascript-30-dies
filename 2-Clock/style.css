@@ -1,0 +1,71 @@
+body {
+  margin: 0;
+  color: aqua;
+}
+
+.wrapper__clock {
+  background: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+
+.clock {
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  border: 10px solid white;
+}
+
+.center {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: 10px solid white;
+  position: absolute;
+  top: calc(50% - 21px);
+  left: calc(50% - 21px);
+  opacity: 0.7;
+}
+
+.hand {
+  background: rgba(255, 255, 255, 0.308);
+  position: absolute;
+  top: calc(50% - 10px);
+  -webkit-transform-origin: 102%;
+          transform-origin: 102%;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  -webkit-transition: all 0.05s;
+  transition: all 0.05s;
+  -webkit-transition-timing-function: cubic-bezier(0.27, 2.5, 0.58, 1);
+          transition-timing-function: cubic-bezier(0.27, 2.5, 0.58, 1);
+}
+
+.second-hand {
+  width: 240px;
+  background: #d4299b;
+  height: 2px;
+}
+
+.minute-hand {
+  width: 240px;
+  background: #310dcf;
+  height: 5px;
+}
+
+.hour-hand {
+  width: 240px;
+  background: white;
+  height: 8px;
+}
+/*# sourceMappingURL=style.css.map */
